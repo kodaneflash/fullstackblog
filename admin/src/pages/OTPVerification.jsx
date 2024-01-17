@@ -51,8 +51,9 @@ const OTPVerification = () => {
     resend.mutate(otpData.id);
   };
 
-  if (!otpData?.otpLevel) navigate("/auth");
-  if (user?.emailVerified) navigate("/");
+ // Removed auto-redirect on email verification
+  // if (!otpData?.otpLevel) navigate("/auth");
+  // if (user?.emailVerified) navigate("/");
 
   useEffect(() => {
     alert("Account has automatically been activated. Try login");
