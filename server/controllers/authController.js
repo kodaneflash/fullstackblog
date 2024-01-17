@@ -11,8 +11,9 @@ export const register = async (req, res, next) => {
     return next("Provide Required Fields!");
   }
 
-  if (accountType === "Writer" && !image)
-    return next("Please provide profile picture");
+// if (accountType === "Writer" && !image)
+//     return next("Please provide profile picture");
+
 
   try {
     const userExist = await Users.findOne({ email });
