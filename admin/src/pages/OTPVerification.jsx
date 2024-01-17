@@ -55,11 +55,11 @@ const OTPVerification = () => {
   // if (!otpData?.otpLevel) navigate("/auth");
   // if (user?.emailVerified) navigate("/");
 
-  useEffect(() => {
-    alert("Account has automatically been activated. Try login");
-    navigate("/auth");
-    localStorage.removeItem("otp_data");
-  }, []);
+  // useEffect(() => {
+  //   alert("Account has automatically been activated. Try login");
+  //   navigate("/auth");
+  //   localStorage.removeItem("otp_data");
+  // }, []);
 
   return (
     <div
